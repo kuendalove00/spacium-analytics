@@ -1,0 +1,15 @@
+{
+    "name": "love/spacium-analytics",
+    "autoload": {
+        "psr-4": {
+            "Love\\SpaciumAnalytics\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kuendalove00",
+            "email": "kuendamayeye14@gmail.com"
+        }
+    ],
+    "require": {}
+}

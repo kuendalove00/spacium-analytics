@@ -1,0 +1,309 @@
+<span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>INCUBADORA DE EMPRESAS | ISPTEC</title>
+      <link rel="stylesheet" href="style.css" />
+      <!-- Font Awesome Cdn Link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    </head>
+    <body>
+      <div class="container">
+        <nav>
+          <div class="navbar">
+            <div class="logo">
+                <img src="images/Asset 6.png" alt="logo">
+            </div>
+            <ul>
+              <li class="nav-1"><a href="#" onclick="showSection('dashboard'); return false;">
+                <i class="fas fa-user"></i>
+                <span class="nav-item">Dashboard</span>
+              </a>
+              </li>
+              <li  id="startup">
+                <i class="fas fa-chart-bar"></i>
+                <span class="nav-item">Startups</span>
+                <ul class="submenu">
+                    <li><a href="#" onclick="showSection('cadastrar'); return false;">
+                        <i class="fas fa-user-plus"></i><span class="nav-item"> Cadastrar</span>
+                     </a> 
+                   </li>
+                    <li><a href="#" onclick="showSection('listar'); return false;">
+                        <i class="fas fa-list"></i><span class="nav-item">Listar</span>
+                      </a>
+                </li>
+                </ul>
+             
+              </li>
+              
+              <li class="nav-1"><a href="#" onclick="showSection('estatisticas'); return false;">
+                <i class="fas fa-chart-area"></i>
+                <span class="nav-item">Estatisticas</span>
+              </a>
+              </li>
+              <li class="nav-1"><a href="#" onclick="showSection('help'); return false;">
+                <i class="fas fa-question-circle"></i>
+                <span class="nav-item">Help</span>
+              </a>
+              </li>
+              <li class="nav-1"><a href="#" class="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-item">Logout</span>
+              </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    
+        <section class="main">
+          <div class="main-top">
+            <p>Incubadora de Empresas | ISPTEC</p>
+        </div>
+
+
+        <div id="dashboard" class="content-section" style="display:block;">
+          Conteúdo do Dashboard
+        </div>
+
+
+
+
+        <div id="cadastrar" class="content-section" style="display:none;">
+            
+            <div class="container1">
+                <form class="registration-form">
+                    <h2>FORMULÁRIO DE INSCRIÇÃO</h2>
+            
+                    <div class="form-group">
+                        <label for="nome-projeto">Nome do(a) projeto/empresa:</label>
+                        <input type="text" id="nome-projeto" name="nome-projeto" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="data-constituicao">Data de constituição:</label>
+                        <input type="text" id="data-constituicao" name="data-constituicao" placeholder="DD/MM/AAAA" required>
+                        <label for="nif">NIF:</label>
+                        <input type="text" id="nif" name="nif" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="telem">Telem:</label>
+                        <input type="text" id="telem" name="telem" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="website">Website/Rede social:</label>
+                        <input type="text" id="website" name="website">
+                        <label for="localizacao">Localização:</label>
+                        <input type="text" id="localizacao" name="localizacao">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="constituicao-equipa">Constituição da Equipa (incluindo o nº de matrícula):</label>
+                        <textarea id="constituicao-equipa" name="constituicao-equipa" rows="5" required></textarea>
+                    </div>
+            
+                    <div class="form-group-1">
+                        <label for="estado-negocio">Estado do Negócio:</label><br>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="ideia" name="estado-negocio" value="ideia">
+                        <label for="ideia">Ideia</label>
+                       </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="prototipo" name="estado-negocio" value="prototipo">
+                        <label for="prototipo">Protótipo</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="mvp-mvs" name="estado-negocio" value="mvp-mvs">
+                        <label for="mvp-mvs">MVP/MVS</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="startup" name="estado-negocio" value="startup">
+                        <label for="startup">Start-up</label>
+                      </div>
+                    </div>
+            
+                    <div class="form-group-2">
+                        <label for="identidade-visual">Identidade visual:</label><br>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="sim" name="identidade-visual" value="sim">
+                        <label for="sim">Sim</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="nao" name="identidade-visual" value="nao">
+                        <label for="nao">Não</label>
+                      </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="descricao-negocio">Descrição do Negócio:</label><br>
+                        <textarea id="descricao-negocio" name="descricao-negocio" rows="5" required></textarea>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="sector-actuacao">Sector de actuação:</label><br>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="agronegocio" name="sector-actuacao" value="agronegocio">
+                        <label for="agronegocio">Agronegócio</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="educacao" name="sector-actuacao" value="educacao">
+                        <label for="educacao">Educação</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="engenharia" name="sector-actuacao" value="engenharia">
+                        <label for="engenharia">Engenharia</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="energias-renovaveis" name="sector-actuacao" value="energias-renovaveis"> 
+                        <label for="energias-renovaveis">Energias Renováveis</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="financas" name="sector-actuacao" value="financas">
+                        <label for="financas">Finanças</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="imobiliario" name="sector-actuacao" value="imobiliario">
+                        <label for="imobiliario">Imobiliário</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="logistica" name="sector-actuacao" value="logistica">
+                        <label for="logistica">Logística & distribuição</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="mobilidade" name="sector-actuacao" value="mobilidade">
+                        <label for="mobilidade">Mobilidade Urbana</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="publicidade" name="sector-actuacao" value="publicidade">
+                        <label for="publicidade">Publicidade & Marketing</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="saude" name="sector-actuacao" value="saude">
+                        <label for="saude">Saúde</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="t-i" name="sector-actuacao" value="t-i">
+                        <label for="t-i">T.I / Desenvolvimento de Software</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="outros-sector-1" name="sector-actuacao" value="outros-sector-1">
+                        <label for="outros-sector-1">outros: </label>
+                      </div>
+                        <input type="text" id="outros-sector" name="sector-actuacao" required>
+                      
+
+                       
+                    </div>
+            
+                    <div class="form-group">
+
+                        <label for="modelo-negocio">Modelo de negócio:</label><br>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="comercializacao-licencas" name="modelo-negocio" value="comercializacao-licencas">
+                        <label for="comercializacao-licencas">Comercialização de Licenças de software</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="marketplace" name="modelo-negocio" value="marketplace">
+                        <label for="marketplace">Marketplace/ E-commerce</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="prestacao-servicos" name="modelo-negocio" value="prestacao-servicos">
+                        <label for="prestacao-servicos">Prestação de Serviços</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="taxa" name="modelo-negocio" value="taxa">
+                        <label for="taxa">Taxa sobre transacções</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="venda" name="modelo-negocio" value="venda">
+                        <label for="venda">Venda de produtos físicos</label>
+                      </div>
+                        <div class="checkbox-group">
+                        <input type="checkbox" id="outros-modelo-negocio-1" name="modelo-negocio" value="outros-modelo-negocio-1">
+                        <label for="modelo-negocio-1">outros: </label>
+                      </div>
+                        <input type="text" id="outros-modelo-negocio" name="modelo-negocio" required>
+                      
+
+
+                        
+
+
+                       
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="historico-participacao">Histórico de participação em eventos (3 últimos):</label><br>
+                        <textarea id="historico-participacao" name="historico-participacao" rows="5" required></textarea>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="montante-financiamento">Total do Montante de financiamento arrecadado:</label>
+                        <input type="text" id="montante-financiamento" name="montante-financiamento" required>
+                    </div>
+            
+            
+                    <div class="form-actions">
+                        <button class="btn-enviar" type="submit">Enviar</button>
+                        <button class="btn-cancelar" type="reset">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+            
+
+        </div>
+
+
+
+        <div id="listar" class="content-section" style="display:none;">
+ 
+            <section class="list">
+                <div class="startup_list">
+                  <h1>Listas de Startups</h1>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Id_Startups</th>
+                        <th>Nome do Projecto</th>
+                        <th>Estado do negócio</th>
+                        <th>Sector de Actuação</th>
+                        <th>Avaliações</th>
+                        <th>Editar</th>
+                        <th>Ver</th>
+                        <th>Excluir</th>
+                        <th>Avaliações</th>
+                      </tr>
+                      </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                              <td class="active">01</td>
+                              <td>PRE </td>
+                              <td>MVP</td>
+                              <td>Logistica</td>
+                              <td>boa</td>
+                              <td><button>Editar</button></td>
+                              <td><button>Ver</button></td>
+                              <td><button>Excluir</button></td>
+                              <td><button>Avaliar</button></td>
+                            </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+        
+        </div>
+
+
+
+        <div id="estatisticas" class="content-section" style="display:none;">Conteúdo de Estatísticas</div>
+
+
+
+        <div id="help" class="content-section" style="display:none;">Conteúdo de Help</div>
+   
+    <script src="script.js"></script>
+    </body>
+    </html></span>

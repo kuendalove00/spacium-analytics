@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCUBADORA DE EMPRESAS | ISPTEC</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./assets/imgs/Asset 6.png" alt="logo">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./cadastrar.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Cadastrar Startups</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./listar.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Listar Startups</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./estatisticas.html">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Estatisticas</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./help.html">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="user">
+                    <img src="assets/imgs/customer01.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container1">
+            <form class="registration-form">
+                <h2>FORMULÁRIO DE INSCRIÇÃO</h2>
+        
+                <div class="form-group">
+                    <label for="nome-projeto">Nome do(a) projeto/empresa:</label>
+                    <input type="text" id="nome-projeto" name="nome-projeto" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="data-constituicao">Data de constituição:</label>
+                    <input type="text" id="data-constituicao" name="data-constituicao" placeholder="DD/MM/AAAA" required>
+                    <label for="nif">NIF:</label>
+                    <input type="text" id="nif" name="nif" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="telem">Telem:</label>
+                    <input type="text" id="telem" name="telem" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="website">Website/Rede social:</label>
+                    <input type="text" id="website" name="website">
+                    <label for="localizacao">Localização:</label>
+                    <input type="text" id="localizacao" name="localizacao">
+                </div>
+        
+                <div class="form-group">
+                    <label for="constituicao-equipa">Constituição da Equipa (incluindo o nº de matrícula):</label>
+                    <textarea id="constituicao-equipa" name="constituicao-equipa" rows="5" required></textarea>
+                </div>
+        
+                <div class="form-group-1">
+                    <label for="estado-negocio">Estado do Negócio:</label><br>
+                    <div class="checkbox-group">
+                    <input type="checkbox" id="ideia" name="estado-negocio" value="ideia">
+                    <label for="ideia">Ideia</label>
+                   </div>
+                    <div class="checkbox-group">
+                    <input type="checkbox" id="prototipo" name="estado-negocio" value="prototipo">
+                    <label for="prototipo">Protótipo</label>
+                  </div>
+                    <div class="checkbox-group">
+                    <input type="checkbox" id="mvp-mvs" name="estado-negocio" value="mvp-mvs">
+                    <label for="mvp-mvs">MVP/MVS</label>
+                  </div>
+                    <div class="checkbox-group">
+                    <input type="checkbox" id="startup" name="estado-negocio" value="startup">
+                    <label for="startup">Start-up</label>
+                  </div>
+                </div>
+        
+                <div class="form-group-2">
+                    <label for="identidade-visual">Identidade visual:</label><br>
+                    <div class="checkbox-group">
+                    <input type="checkbox" id="sim" name="identidade-visual" value="sim">
+                    <label for="sim">Sim</label>
+                  </div>
+                    <div class="checkbox-group">
+                    <input type="checkbox" id="nao" name="identidade-visual" value="nao">
+                    <label for="nao">Não</label>
+                  </div>
+                </div>
+        
+                <div class="form-group">
+                    <label for="descricao-negocio">Descrição do Negócio:</label><br>
+                    <textarea id="descricao-negocio" name="descricao-negocio" rows="5" required></textarea>
+                </div>
+        
+                <div class="form-group">
+                  <label for="sector">Sector de actuação:</label>
+                  <select id="sector" name="sector">
+                      <option value="Agronegócio">Agronegócio</option>
+                      <option value="Educação">Educação</option>
+                      <option value="Engenharia">Engenharia</option>
+                      <option value="Energias Renováveis">Energias Renováveis</option>
+                      <option value="Finanças">Finanças</option>
+                      <option value="Imobiliário">Imobiliário</option>
+                      <option value="Logística & distribuição">Logística & distribuição</option>
+                      <option value="Mobilidade Urbana">Mobilidade Urbana</option>
+                      <option value="Publicidade & Marketing">Publicidade & Marketing</option>
+                      <option value="Saúde">Saúde</option>
+                      <option value="T.I / Desenvolvimento de Software">T.I / Desenvolvimento de Software</option>
+                      <option value="Outros">Outros</option>
+                  </select>
+                  <input type="text" id="outros" name="outros" placeholder="Outros setores de atuação">
+                   
+                </div>
+        
+                <div class="form-group">
+
+                  <label for="modelo-negocio">Modelo de negócio:</label>
+                  <select id="modelo-negocio" name="modelo-negocio">
+                    <option value="licencas-software">Comercialização de Licenças de software</option>
+                    <option value="marketplace">Marketplace/ E-commerce</option>
+                    <option value="servicos">Prestação de Serviços</option>
+                    <option value="taxa-transacoes">Taxa sobre transacções</option>
+                    <option value="venda-produtos">Venda de produtos físicos</option>
+                    <option value="outros">Outros</option>
+                  </select>
+                  <input type="text" id="outros-modelo-negocio" name="outros" placeholder="Outros Modelo de negócio">
+
+                </div>
+        
+                <div class="form-group">
+                    <label for="historico-participacao">Histórico de participação em eventos (3 últimos):</label><br>
+                    <textarea id="historico-participacao" name="historico-participacao" rows="5" required></textarea>
+                </div>
+        
+                <div class="form-group">
+                    <label for="montante-financiamento">Total do Montante de financiamento arrecadado:</label>
+                    <input type="text" id="montante-financiamento" name="montante-financiamento" required>
+                </div>
+        
+        
+                <div class="form-actions">
+                    <button class="btn-enviar" type="submit">Enviar</button>
+                    <button class="btn-cancelar" type="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+        
+
+
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

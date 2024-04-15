@@ -8,15 +8,26 @@ class Inscricao {
     private string $nome;
     private string $data_constituicao;
     private string $data_inscricao;
-    private string $morada;
+    private string $localizacao;
     private string $contacto;
     private string $email;
     private string $nif;
     private string $website;
-    private string $actividade;
-    private string $resumo;
+    private string $descricao;
+    private string $integrantes;
     private string $sector;
     private string $modelo;
+    private string $estado;
+    private string $idv;
+    private string $participacoes;
+    private float $montante;
+    private string $grau_inovacao;
+    private string $escalabilidade;
+    private string $impacto;
+    private string $fundos_obtidos;
+    private string $tecnologia;
+    private string $maturidade;
+
 
     public function getId(): int {
         return $this->id;
@@ -35,7 +46,7 @@ class Inscricao {
     }
 
     public function getMorada(): string {
-        return $this->morada;
+        return $this->localizacao;
     }
     public function getContacto(): string {
         return $this->contacto;
@@ -53,12 +64,12 @@ class Inscricao {
         return $this->website;
     }
 
-    public function getActividade(): string {
-        return $this->actividade;
+    public function getDescricao(): string {
+        return $this->descricao;
     }
 
-    public function getResumo(): string {
-        return $this->resumo;
+    public function getIntegrantes(): string {
+        return $this->integrantes;
     }
 
     public function getSector(): string {
@@ -85,8 +96,8 @@ class Inscricao {
         $this->$data_inscricao = $data_inscricao;
     }
 
-    public function setMorada(string $morada): void {
-        $this->morada = $morada;
+    public function setMorada(string $localizacao): void {
+        $this->localizacao = $localizacao;
     }
 
     public function setContacto(string $contacto): void {
@@ -105,12 +116,12 @@ class Inscricao {
         $this->website = $website;
     }
 
-    public function setActidade(string $actividade): void {
-        $this->$actividade = $actividade;
+    public function setDescricao(string $descricao): void {
+        $this->$descricao = $descricao;
     }
 
-    public function setResumo(string $resumo): void {
-        $this->resumo = $resumo;
+    public function setIntegrantes(string $integrantes): void {
+        $this->integrantes = $integrantes;
     }
 
     public function setSector(string $sector): void {
@@ -121,19 +132,28 @@ class Inscricao {
         $this->modelo = $modelo;
     }
 
-    public function __construct(int $id, string $nome, string $data_constituicao, string $data_inscricao, string $morada, string $contacto, string $email, string $nif,  string $website, string $actividade, string $resumo, string $sector, string $modelo) {
+    public function __construct(int $id, string $nome, string $data_constituicao, string $data_inscricao, string $localizacao, string $contacto, string $email, string $nif,  string $website, string $descricao, string $integrantes, string $sector, string $modelo, string $estado, string $idv, string $participacoes, string $montante, string $grau_inovacao, string $escalabilidade, string $impacto, string $fundos_obtidos, string $tecnologia, string $maturidade) {
         $this->id = $id;
         $this->nome = $nome;
         $this->data_constituicao = $data_constituicao;
         $this->data_inscricao = $data_inscricao;
-        $this->morada = $morada;
+        $this->localizacao = $localizacao;
         $this->contacto = $contacto;
         $this->email = $email;
         $this->nif = $nif;
         $this->website = $website;
-        $this->actividade = $actividade;
-        $this->resumo = $resumo;
+        $this->descricao = $descricao;
+        $this->integrantes = $integrantes;
         $this->sector = $sector;
-        $this->modelo = $modelo;
+        $this->estado = $estado;
+        $this->idv = $idv;
+        $this->participacoes = $participacoes;
+        $this->montante = $montante;
+        $this->grau_inovacao = $grau_inovacao;
+        $this->escalabilidade = $escalabilidade;
+        $this->impacto = $impacto;
+        $this->fundos_obtidos = $fundos_obtidos;
+        $this->tecnologia = $tecnologia;
+        $this->maturidade = $maturidade;
     }
 }
